@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #7c7a7a;
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(157, 168, 141);
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header img {
+  height: 40px;
+  margin: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  text-align: left;
+  margin: 40px 0;
+}
+
+.grid-item {
+  flex: 1 1 calc(50% - 30px);
+}
+
+.highlight {
+  color: rgb(45, 128, 96);
+  font-weight: bold;
+}
+
+.line {
+  height: 1px;
+  background-color: #007a33;
+  margin: 20px auto;
+}
+
+footer {
+  text-align: left;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.social-icons img {
+  width: 35px;
+  margin: 0 5px;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+  text-align: center;
+  color: #007a59;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007a33;
+  margin: 10px auto 0;
+}
+
+.btn {
+  background-color: rgb(234, 104, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.loan-info-section {
+  background-color: #f0f8f5;
+  padding: 20px;
+}
+
+.loan-header {
+  background-color: #007a33;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.loan-description {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 2;
+  text-align: left;
+  padding: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.testimonial {
+  flex: 1;
+  min-width: 280px;
+  max-width: 33%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.hero-section {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-cut {
+  flex: 1;
+  background-color: rgb(44, 111, 95);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 768px) {
+  .grid-item,
+  .testimonial {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+}
